@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.img-bg {
+  border-radius: 100%;
+  padding: 4px;
+  background: hsla(0, 0%, 100%, 1);
+
+  background: linear-gradient(
+    360deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(0, 0%, 100%, 1) 0%,
+    rgb(207, 206, 206) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#E2E2E2", GradientType=1 );
+}
+.option:hover > p {
+  color: #3a77ff;
+  transition: transform 0.3ms ease; /* Adjust brightness for desired hover effect */
+}
+
+.option:hover > .img-bg {
+  background: rgba(
+    145,
+    197,
+    255,
+    0.596
+  ); /* Adjust brightness for desired hover effect */
+  transition: transform 0.3ms ease; /* Adjust brightness for desired hover effect */
+}
+
+.location:active,
+.search:active {
+  border: none;
+  outline: none;
+}
+.location:focus,
+.search:focus {
+  border: none;
+  outline: none;
+}
+.location:checked,
+.search:checked {
+  border: none;
+  outline: none;
+}
+
+.map,
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  outline: 1px solid rgb(214, 214, 214);
+}
+
+.map::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  background-image: url("./assets/img/map-pin-line.png");
+  background-size: contain; /* Ensure the icon fits within the element */
+}
+
+.search:active {
+  border: none;
+  outline: none;
+}
+
+.search:focus {
+  border: none;
+  outline: none;
+}
+.search:checked {
+  border: none;
+  outline: none;
+}
+.searchContainer:focus-within {
+  outline: 1px solid #6de7dd;
+}
+.map:focus-within {
+  outline: 1px solid #6de7dd;
+}
+
+.sell {
+  font-family: inherit;
+  padding: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 213, 0, 1) 0%,
+    rgba(255, 213, 0, 1) 27%,
+    rgba(0, 91, 187, 1) 27%,
+    rgba(0, 91, 187, 1) 47%,
+    rgb(36, 212, 224) 87%,
+    rgb(36, 212, 224) 97%
+  );
+}
+
+.sell .button-content {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0.3em 1.5em;
+  padding-left: 1.2em;
+  border-radius: 16px;
+}
