@@ -10,6 +10,8 @@ const Home = () => {
         <HeroBanner />
         <Categories />
         <Title title="Mobile Phones" />
+        <Title title="Cars" />
+        <Title title="Bikes & Motorcycles" />
       </div>
     </>
   );

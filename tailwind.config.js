@@ -23,6 +23,7 @@ export default {
       'accient': '#1fc4bb',
       'text': '#212121',
       'bg-text': '#c8f7f6',
+      'blue': '#3a77ff',
       'grey': '#ebeff0',
     },
     extend: {},
