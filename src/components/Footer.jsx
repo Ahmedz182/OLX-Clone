@@ -6,6 +6,7 @@ const Footer = () => {
       <div className="flex bg-[#f7f9fa] mt-10 gap-5 flex-wrap items-center justify-center py-4">
         <img
           className="h-[200px] ps-1"
+          loading="lazy"
           src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp"
           alt="app"
         />

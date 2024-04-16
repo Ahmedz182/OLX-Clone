@@ -10,6 +10,7 @@ const Categories = () => {
               <img
                 className="w-[88px] sm:w-[58px] md:w-[58px]"
                 src={img}
+                loading="lazy"
                 alt="categoryImg"
               />
               <p className="w-[106px] text-center  font-semibold pt-1">
