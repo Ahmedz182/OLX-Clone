@@ -4,7 +4,7 @@ const Item = ({ title, price, img, location, time }) => {
   const [Like, setLike] = useState(false);
   return (
     <>
-      <div className="outline outline-1 flex flex-col outline-text/20 gap-3  rounded w-[23%] cursor-pointer">
+      <div className="outline outline-1 flex flex-col outline-text/20 gap-3  rounded w-[23%] sm:w-[33%] md:w-[30%] cursor-pointer">
         <img src={img} className=" imgItem" alt="Mobile Image" />
         <span className="px-3  py-2 flex flex-col gap-y-4">
           <span className="flex items-center justify-between ">

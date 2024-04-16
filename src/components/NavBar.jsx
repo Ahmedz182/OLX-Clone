@@ -34,7 +34,7 @@ const NavBar = () => {
               type="text"
               value="Pakistan"
               placeholder="Location or Compound"
-              className="location w-48 px-2  sm:w-[75dvw] "
+              className="location w-48 px-2  sm:w-[85dvw] md:sm:w-[85dvw] md:w-[66dvw]"
               id="location"
             />
             <i class="ri-arrow-down-s-line py-2 text-2xl"></i>
@@ -43,19 +43,19 @@ const NavBar = () => {
             <input
               type="search"
               placeholder="Find Cars,Mobile Phones and more..."
-              className="w-[50dvw] search px-2 py-1 sm:w-[80dvw]"
+              className="w-[50dvw] search px-2 py-1 sm:w-[80dvw] md:w-[73dvw]"
               id="search"
             />
             <span className="bg-primary h-full w-12 py-2 flex items-center justify-center cursor-pointer">
               <i class="ri-search-line text-2xl text-[#ffff]"></i>
             </span>
           </span>
-          <p className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0">
+          <p className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
             Login
           </p>
           {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
 
-          <button className="sell ms-4">
+          <button className="sell ms-4 sm:hidden md:hidden">
             <span class="button-content">
               <i class="ri-add-fill font-bold text-xl"></i> Sell
             </span>

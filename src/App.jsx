@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import CATEGORIES from "./utils/demo/categories";
@@ -21,6 +22,7 @@ function App() {
         </div>
       </div>
       <Home />
+      <Footer />
     </>
   );
 }

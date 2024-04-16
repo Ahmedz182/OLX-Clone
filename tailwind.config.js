@@ -21,7 +21,7 @@ export default {
     }, colors: {
       'primary': '#002e33',
       'accient': '#1fc4bb',
-      'text': '#212121',
+      'text': '#002e33',
       'bg-text': '#c8f7f6',
       'blue': '#3a77ff',
       'grey': '#ebeff0',
