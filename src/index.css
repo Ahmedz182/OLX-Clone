@@ -128,3 +128,8 @@
   padding-left: 1.2em;
   border-radius: 16px;
 }
+.imgItem {
+  height: 180px;
+  overflow: hidden;
+  object-fit: cover;
+}
