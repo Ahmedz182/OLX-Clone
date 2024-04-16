@@ -1,9 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import car from "../assets/img/car.svg";
 import building from "../assets/img/building.svg";
+import LoginPage from "../pages/Login";
+import { Modal } from "antd";
 const NavBar = () => {
+  const checkLogin = localStorage.getItem("Login");
   useEffect(() => {}, []);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -50,18 +63,41 @@ const NavBar = () => {
               <i class="ri-search-line text-2xl text-[#ffff]"></i>
             </span>
           </span>
-          <p className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
+          <p
+            onClick={showModal}
+            className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
             Login
           </p>
           {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
 
-          <button className="sell ms-4 sm:hidden md:hidden">
+          <button
+            className="sell ms-4 sm:hidden md:hidden"
+            onClick={() => {
+              if (localStorage.getItem("Login") === "false") {
+                showModal();
+              } else {
+                alert("Do you want to sell?");
+              }
+            }}>
             <span class="button-content">
               <i class="ri-add-fill font-bold text-xl"></i> Sell
             </span>
           </button>
         </div>
       </div>
+
+      <Modal
+        className="mt-[-50px]"
+        // title="Basic Modal"
+        open={isModalOpen}
+        onOk={handleOk}
+        footer={null}
+        onCancel={handleCancel}>
+        <span className="flex justify-center mt-8">
+          <img src={logo} className="w-20" />
+        </span>
+        <LoginPage />
+      </Modal>
     </>
   );
 };

@@ -9,6 +9,10 @@ function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
+    if (localStorage.getItem("Login") === null) {
+      localStorage.setItem("Login", false);
+    }
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const scrollPercentage = (scrollY / document.body.scrollHeight) * 100;
