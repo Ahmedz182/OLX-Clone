@@ -4,8 +4,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyD_2u1pfV-w2GAsvuVrFSp48RRUi0abzT0",
-    // authDomain: "olx-clone-794ba.firebaseapp.com",
-    authDomain: "cloneeolx.netlify.app",
+    authDomain: "olx-clone-794ba.firebaseapp.com",
     projectId: "olx-clone-794ba",
     storageBucket: "olx-clone-794ba.appspot.com",
     messagingSenderId: "795916962801",
