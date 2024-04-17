@@ -1,5 +1,6 @@
 const Mobile = [
     {
+        id: "sxqmkmejnc",
         title: "Iphone 15 Pro Max non pta",
         price: "325,000",
         time: "3 Week",
@@ -8,6 +9,7 @@ const Mobile = [
         Description: "Iphone 15 Pro Max 256 Gb\nWhite Titanium\nCanada Model(Physical + Esim )\nNon Pta \nSystem Active(0 Cycle count)"
     },
     {
+        id: "02189e489839",
         title: "iPhone 13 Pro Max",
         price: "300,000",
         time: "1 Week",
@@ -16,6 +18,7 @@ const Mobile = [
         Description: "iPhone 13 Pro Max scratch less phone pta approved"
     },
     {
+        id: "1299asjnjshu",
         title: "Samsung S10 Plus",
         price: "52,000",
         time: "2 Week",
@@ -24,15 +27,17 @@ const Mobile = [
         Description: "Samsung S10 Plus 12 GB RAM 256 GB memory dabba charger handfree PTA approved official condition 10 of 10 all okay"
     },
     {
+        id: "10w9i9929",
         title: "Oneplus 7 Pro 8/256 Fresh Global",
         price: "63,000",
         time: "3 hour",
         img: "https://images.olx.com.pk/thumbnails/447265763-800x600.webp",
         location: "Abdul Hakim, Punjab",
-        Description: "fresh Condition Only Mbl Not Open Not Repear 10/10        "
+        Description: "fresh Condition Only Mbl Not Open Not Repear 10/10"
     },
     {
-        title: "Motorola Edge Plus        ",
+        id: "g23t763g6d3g6xs",
+        title: "Motorola Edge Plus",
         price: "54,999",
         time: "5 hour",
         img: "https://images.olx.com.pk/thumbnails/445106157-800x600.webp",
@@ -40,7 +45,8 @@ const Mobile = [
         Description: "Motorola Edge Plus 12/256 Single Sim Official PTA"
     },
     {
-        title: "Oppo A57        ",
+        id: "293e231d0j238j38",
+        title: "Oppo A57",
         price: "22,500",
         time: "19 hour",
         img: "https://images.olx.com.pk/thumbnails/447407656-800x600.webp",
@@ -48,6 +54,7 @@ const Mobile = [
         Description: "Brand New Condition 10 by 10\nRam 6+4 gb\nRom 128 gb"
     },
     {
+        id: "2w21en3njnr4nj",
         title: "S22 Ultra Samsung Galaxy ",
         price: "149,999",
         time: "3 Week",
@@ -56,6 +63,7 @@ const Mobile = [
         Description: "no shade, no dot, no line PTA Approved"
     },
     {
+        id: "9i29ks99sqk9wis",
         title: "iphone 15 plus non pta",
         price: "170,000",
         time: "3 days",
@@ -64,6 +72,7 @@ const Mobile = [
         Description: "iphone 15 plus like brand new condition 10/10 battery health 100% face id true tune active water sealed pack 100%  urgent sell  exchng with iphone 14 pro 13 pro max"
     },
     {
+        id: "0o02os20sxoakxsxjikmx",
         title: "Google Pixel 6 Pro",
         price: "92,000",
         time: "5 days",

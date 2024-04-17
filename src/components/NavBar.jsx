@@ -35,10 +35,7 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "1",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <a target="_blank" rel="noopener noreferrer" href="#">
           My Ads
         </a>
       ),
@@ -48,10 +45,7 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "2",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <a target="_blank" rel="noopener noreferrer" href="#">
           Favourites and Saved
         </a>
       ),
@@ -60,10 +54,7 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "3",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <a target="_blank" rel="noopener noreferrer" href="#">
           Public Profile
         </a>
       ),
@@ -76,10 +67,7 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "5",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <a target="_blank" rel="noopener noreferrer" href="#">
           Help
         </a>
       ),
@@ -88,10 +76,7 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "6",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <a target="_blank" rel="noopener noreferrer" href="#">
           Settings
         </a>
       ),
@@ -179,53 +164,54 @@ const NavBar = ({ checkLogin }) => {
               <i class="ri-search-line text-2xl text-[#ffff]"></i>
             </span>
           </span>
-          {!checkLogin ? (
-            <p
-              onClick={showModal}
-              className="text-l ms-10 mx-10 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
-              Login
-            </p>
-          ) : (
-            <span className="flex flex-wrap items-center ps-1 gap-3 ">
-              <i className="ri-chat-3-line text-2xl cursor-pointer mt-2"></i>
-              <i className="ri-notification-line text-2xl cursor-pointer mt-2"></i>
+          <span className="flex items-center justify-end float-end">
+            {!checkLogin ? (
+              <p
+                onClick={showModal}
+                className="text-l ms-10 mx-10 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0">
+                Login
+              </p>
+            ) : (
+              <span className="flex flex-wrap items-center ps-1 gap-3 ">
+                <i className="ri-chat-3-line text-2xl cursor-pointer mt-2"></i>
+                <i className="ri-notification-line text-2xl cursor-pointer mt-2"></i>
 
-              <Dropdown
-                menu={{
-                  items,
-                }}>
-                <a onClick={(e) => e.preventDefault()}>
-                  <img
-                    className="w-12 cursor-pointer"
-                    src={userIcon}
-                    alt="user"
-                  />
-                </a>
-              </Dropdown>
-            </span>
-          )}
+                <Dropdown
+                  menu={{
+                    items,
+                  }}>
+                  <a onClick={(e) => e.preventDefault()}>
+                    <img
+                      className="w-12 cursor-pointer me-3"
+                      src={userIcon}
+                      alt="user"
+                    />
+                  </a>
+                </Dropdown>
+              </span>
+            )}
 
-          {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
+            {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
 
-          <button
-            className="sell sm:hidden md:hidden"
-            onClick={() => {
-              if (localStorage.getItem("Login") === "false") {
-                showModal();
-              } else {
-                alert("Do you want to sell?");
-              }
-            }}>
-            <span class="button-content">
-              <i class="ri-add-fill font-bold text-xl"></i> Sell
-            </span>
-          </button>
+            <button
+              className="sell "
+              onClick={() => {
+                if (localStorage.getItem("Login") === "false") {
+                  showModal();
+                } else {
+                  alert("Do you want to sell?");
+                }
+              }}>
+              <span class="button-content">
+                <i class="ri-add-fill font-bold text-xl"></i> Sell
+              </span>
+            </button>
+          </span>
         </div>
       </div>
 
       <Modal
         className="mt-[-50px]"
-        // title="Basic Modal"
         open={isModalOpen}
         onOk={handleOk}
         footer={null}

@@ -1,6 +1,7 @@
 const bike = [
 
     {
+        id: "mcwdncjwnji",
         title: "Honda 125 2021",
         price: "147,000",
         time: "3 hours ",
@@ -10,6 +11,7 @@ const bike = [
         Description: "complete documents and smart card. "
     },
     {
+        id: "sxnqjosnwjnj",
         title: "SUZUKI GD-110S 2024 MODEL",
         price: "362,000",
         time: "2 hours",
@@ -19,6 +21,7 @@ const bike = [
         Description: " FRESH STOCK & NO HIDDEN CHARGES COMPLETE A-Z IN THIS AMOUNT "
     },
     {
+        id: "xsjslcnqnj",
         title: "350cc Honda CBR",
         price: "1,020,000",
         driven: "0",
@@ -28,6 +31,8 @@ const bike = [
         Description: "Brand new zero meter "
     },
     {
+
+        id: "kkoiooimoikmk",
         title: "Suzuki Gsx-R 600 ModeL 2013",
         driven: "14,200",
         price: "3,100,000",
@@ -37,7 +42,8 @@ const bike = [
         Description: "Brand new Maxxis 200 fat tyres installed. \nRecently Tuned along with all lubricants and filters replacement. 1000 kms used after this. "
     },
     {
-        title: "Suzuki GR 150 Model [2022]        ",
+        id: "xmkiqimw",
+        title: "Suzuki GR 150 Model [2022]",
         driven: "4700",
         price: "435,000",
         time: "19 minutes",

@@ -18,7 +18,9 @@ const Register = () => {
         // Handle sign-in errors
       });
   };
-
+  const notAvail = () => {
+    alert("Not Available yet Create Account with Google ");
+  };
   useEffect(() => {
     setEmailValue(localStorage.getItem("email"));
   }, []);
@@ -39,7 +41,9 @@ const Register = () => {
           />
           <p className="font-bold text-primary text-lg">Join with Google</p>
         </span>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <img
             className="w-7"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png"
@@ -49,11 +53,15 @@ const Register = () => {
         </span>
 
         <p className="text-lg">OR</p>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <i className="ri-mail-line text-3xl"></i>
           <p className="font-bold text-primary text-lg">Join with Email</p>
         </span>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <i className="ri-phone-line text-3xl"></i>
           <p className="font-bold text-primary text-lg">Join with Phone</p>
         </span>

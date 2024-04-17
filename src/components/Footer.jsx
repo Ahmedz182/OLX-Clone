@@ -11,13 +11,15 @@ const Footer = () => {
           alt="app"
         />
         <span className="flex flex-col items-start justify-center gap-2">
-          <p className="text-3xl text-text font-bold">TRY THE OLX APP</p>
-          <p className="text-xl w-[420px] text-text">
+          <p className="text-3xl text-text font-bold  sm:px-10 md:px-5">
+            TRY THE OLX APP
+          </p>
+          <p className="text-xl w-[420px] text-text sm:px-10 md:px-5">
             Buy, sell and find just about anything using the app on your mobile.
           </p>
         </span>
         <span className="h-36 w-[2px] bg-primary/30 sm:hidden md:hidden"></span>
-        <span className="flex flex-col gap-3">
+        <span className="flex flex-col gap-3 sm:px-10 md:px-5">
           <p className="text-sm font-bold text-text">GET YOUR APP TODAY</p>
 
           <span className="flex gap-1">

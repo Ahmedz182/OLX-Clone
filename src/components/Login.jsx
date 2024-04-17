@@ -6,6 +6,10 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
+  const notAvail = () => {
+    alert("Not Available yet Sign in with Google ");
+  };
+
   const [EmailValue, setEmailValue] = useState("");
   const GoogleSignIn = () => {
     signInWithPopup(auth, provider)
@@ -43,7 +47,9 @@ const Login = () => {
           />
           <p className="font-bold text-primary text-lg">Login with Google</p>
         </span>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <img
             className="w-7"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png"
@@ -53,11 +59,15 @@ const Login = () => {
         </span>
 
         <p className="text-lg">OR</p>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <i className="ri-mail-line text-3xl"></i>
           <p className="font-bold text-primary text-lg">Login with Email</p>
         </span>
-        <span className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
+        <span
+          onClick={notAvail}
+          className="outline outline-text rounded outline-2 flex gap-3  px-3 py-2  items-center justify-center w-80 cursor-pointer">
           <i className="ri-phone-line text-3xl"></i>
           <p className="font-bold text-primary text-lg">Login with Phone</p>
         </span>
