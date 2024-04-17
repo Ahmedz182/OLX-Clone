@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import car from "../assets/img/car.svg";
+import userIcon from "../assets/img/user.png";
 import building from "../assets/img/building.svg";
 import LoginPage from "../pages/Login";
 import { Modal } from "antd";
@@ -30,7 +31,7 @@ const NavBar = ({ checkLogin }) => {
   return (
     <>
       <div className="bg-[#ffff] fixed ">
-        <div className="wraper px-8 py-4 flex flex-wrap ">
+        <div className="wraper ps-8 py-4 flex flex-wrap ">
           <span>
             <img className="w-16 p-1" src={logo} alt="logo" />
           </span>
@@ -50,7 +51,7 @@ const NavBar = ({ checkLogin }) => {
             </span>
           </div>
         </div>
-        <div className="flex px-10 py-2 gap-5 items-center flex-wrap sm:px-5">
+        <div className="flex px-10 py-2 gap-3 items-center flex-wrap sm:px-5">
           <span class=" map    px-3 rounded cursor-pointer ">
             <input
               type="text"
@@ -65,7 +66,7 @@ const NavBar = ({ checkLogin }) => {
             <input
               type="search"
               placeholder="Find Cars,Mobile Phones and more..."
-              className="w-[50dvw] search px-2 py-1 sm:w-[80dvw] md:w-[73dvw]"
+              className="w-[48dvw] search px-2 py-1 sm:w-[80dvw] md:w-[73dvw]"
               id="search"
             />
             <span className="bg-primary h-full w-12 py-2 flex items-center justify-center cursor-pointer">
@@ -79,13 +80,17 @@ const NavBar = ({ checkLogin }) => {
               Login
             </p>
           ) : (
-            <span className="w-12"></span>
+            <span className="flex flex-wrap items-center ps-1 gap-3 ">
+              <i className="ri-chat-3-line text-2xl cursor-pointer"></i>
+              <i className="ri-notification-line text-2xl cursor-pointer"></i>
+              <img className="w-12 cursor-pointer" src={userIcon} alt="user" />
+            </span>
           )}
 
           {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
 
           <button
-            className="sell ms-4 sm:hidden md:hidden"
+            className="sell sm:hidden md:hidden"
             onClick={() => {
               if (localStorage.getItem("Login") === "false") {
                 showModal();
