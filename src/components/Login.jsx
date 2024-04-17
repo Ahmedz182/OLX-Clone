@@ -13,6 +13,7 @@ const Login = () => {
         console.log(data);
         setEmailValue(data.user.email);
         localStorage.setItem("email", data.user.email);
+        localStorage.setItem("name", data.user.name);
         localStorage.setItem("Login", true);
         window.location.reload();
       })

@@ -5,11 +5,100 @@ import userIcon from "../assets/img/user.png";
 import building from "../assets/img/building.svg";
 import LoginPage from "../pages/Login";
 import { Modal } from "antd";
+import {
+  HeartOutlined,
+  EyeOutlined,
+  QuestionCircleOutlined,
+  SettingOutlined,
+  LogoutOutlined,
+  SolutionOutlined,
+} from "@ant-design/icons";
+import { Dropdown, Space } from "antd";
 const NavBar = ({ checkLogin }) => {
   // const [checkLogin, setcheckLogin] = useState(null);
   // useEffect(() => {
 
   // }, [checkLogin]);
+  const items = [
+    {
+      key: "1",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          My Ads
+        </a>
+      ),
+      icon: <SolutionOutlined />,
+    },
+
+    {
+      key: "2",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          Favourites and Saved
+        </a>
+      ),
+      icon: <HeartOutlined />,
+    },
+    {
+      key: "3",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          Public Profile
+        </a>
+      ),
+      icon: <EyeOutlined />,
+    },
+    {
+      key: "4",
+      label: <hr />,
+    },
+    {
+      key: "5",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          Help
+        </a>
+      ),
+      icon: <QuestionCircleOutlined />,
+    },
+    {
+      key: "6",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          Settings
+        </a>
+      ),
+      icon: <SettingOutlined />,
+    },
+    {
+      key: "7",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.antgroup.com">
+          Logout
+        </a>
+      ),
+      icon: <LogoutOutlined />,
+    },
+  ];
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -31,7 +120,7 @@ const NavBar = ({ checkLogin }) => {
   return (
     <>
       <div className="bg-[#ffff] fixed ">
-        <div className="wraper ps-8 py-4 flex flex-wrap ">
+        <div className="wraper px-10 py-4 flex flex-wrap ">
           <span>
             <img className="w-16 p-1" src={logo} alt="logo" />
           </span>
@@ -76,14 +165,26 @@ const NavBar = ({ checkLogin }) => {
           {!checkLogin ? (
             <p
               onClick={showModal}
-              className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
+              className="text-l ms-10 mx-10 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
               Login
             </p>
           ) : (
             <span className="flex flex-wrap items-center ps-1 gap-3 ">
-              <i className="ri-chat-3-line text-2xl cursor-pointer"></i>
-              <i className="ri-notification-line text-2xl cursor-pointer"></i>
-              <img className="w-12 cursor-pointer" src={userIcon} alt="user" />
+              <i className="ri-chat-3-line text-2xl cursor-pointer mt-2"></i>
+              <i className="ri-notification-line text-2xl cursor-pointer mt-2"></i>
+
+              <Dropdown
+                menu={{
+                  items,
+                }}>
+                <a onClick={(e) => e.preventDefault()}>
+                  <img
+                    className="w-12 cursor-pointer"
+                    src={userIcon}
+                    alt="user"
+                  />
+                </a>
+              </Dropdown>
             </span>
           )}
 
