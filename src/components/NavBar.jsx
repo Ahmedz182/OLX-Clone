@@ -122,11 +122,11 @@ const NavBar = ({ checkLogin }) => {
   return (
     <>
       <div className="bg-[#ffff] fixed ">
-        <div className="wraper px-10 py-4 flex flex-wrap ">
+        <div className="wraper px-10 py-4 flex flex-wrap items-center sm:px-5">
           <span>
-            <img className="w-16 p-1" src={logo} alt="logo" />
+            <img className="w-16 p-1 sm:w-10" src={logo} alt="logo" />
           </span>
-          <div className="flex items-center px-8 gap-6">
+          <div className="flex items-center px-8 sm:px-1 gap-6 sm:gap-3">
             <span className="flex items-center gap-2 cursor-pointer option">
               <span className=" flex img-bg mx-1 items-center justify-center">
                 {/* <i class="ri-roadster-line w-8 p-1"></i> */}
@@ -142,7 +142,7 @@ const NavBar = ({ checkLogin }) => {
             </span>
           </div>
         </div>
-        <div className="flex px-10 py-2 gap-3 items-center flex-wrap sm:px-5">
+        <div className="flex px-10 py-2 gap-3 items-center flex-wrap sm:px-5 sm:justify-end">
           <span class=" map    px-3 rounded cursor-pointer ">
             <input
               type="text"

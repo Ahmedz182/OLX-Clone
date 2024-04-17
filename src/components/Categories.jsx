@@ -3,7 +3,7 @@ import AllCategories from "../utils/demo/AllCategories";
 const Categories = () => {
   return (
     <>
-      <div className="flex flex-wrap gap-x-9 gap-y-4 px-10 pt-10 sm:gap-x-0 md:gap-x-0  sm:py-4 md:py-6 ">
+      <div className="flex flex-wrap gap-x-9 gap-y-4 px-10 pt-10 sm:pt-0 sm:gap-x-1 md:gap-x-0  sm:py-4 md:py-6 ">
         {AllCategories.map(({ title, img }) => {
           return (
             <div className="flex flex-col gap-2 items-center cursor-pointer sm:gap-0 md:gap-0">
