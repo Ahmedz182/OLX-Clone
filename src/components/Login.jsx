@@ -10,10 +10,10 @@ const Login = () => {
   const GoogleSignIn = () => {
     signInWithPopup(auth, provider)
       .then((data) => {
-        console.log(data);
+        console.log(data.user);
         setEmailValue(data.user.email);
         localStorage.setItem("email", data.user.email);
-        localStorage.setItem("name", data.user.name);
+        localStorage.setItem("name", data.user.displayName);
         localStorage.setItem("Login", true);
         window.location.reload();
       })

@@ -15,11 +15,23 @@ import {
 } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 const NavBar = ({ checkLogin }) => {
-  // const [checkLogin, setcheckLogin] = useState(null);
-  // useEffect(() => {
+  const [checkName, setcheckName] = useState(null);
 
-  // }, [checkLogin]);
+  useEffect(() => {
+    setcheckName(localStorage.getItem("name"));
+  }, []);
   const items = [
+    {
+      key: "0",
+      label: (
+        <>
+          <h3>Hello,</h3>
+
+          <h1 className="font-medium">{checkName}</h1>
+        </>
+      ),
+      icon: <SolutionOutlined />,
+    },
     {
       key: "1",
       label: (
@@ -88,13 +100,18 @@ const NavBar = ({ checkLogin }) => {
     {
       key: "7",
       label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com">
+        <p
+          onClick={() => {
+            localStorage.removeItem("email");
+            localStorage.removeItem("name");
+            localStorage.removeItem("Login");
+            window.location.reload();
+          }}>
           Logout
-        </a>
+        </p>
       ),
+      danger: true,
+
       icon: <LogoutOutlined />,
     },
   ];
