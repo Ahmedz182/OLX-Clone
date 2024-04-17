@@ -4,10 +4,13 @@ import car from "../assets/img/car.svg";
 import building from "../assets/img/building.svg";
 import LoginPage from "../pages/Login";
 import { Modal } from "antd";
-const NavBar = () => {
-  const checkLogin = localStorage.getItem("Login");
-  useEffect(() => {}, []);
+const NavBar = ({ checkLogin }) => {
+  // const [checkLogin, setcheckLogin] = useState(null);
+  // useEffect(() => {
+
+  // }, [checkLogin]);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -17,6 +20,12 @@ const NavBar = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+
+  useEffect(() => {
+    if (checkLogin) {
+      handleCancel;
+    }
+  }, [checkLogin]);
 
   return (
     <>
@@ -63,11 +72,16 @@ const NavBar = () => {
               <i class="ri-search-line text-2xl text-[#ffff]"></i>
             </span>
           </span>
-          <p
-            onClick={showModal}
-            className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
-            Login
-          </p>
+          {!checkLogin ? (
+            <p
+              onClick={showModal}
+              className="text-l ms-5 border-b-2 cursor-pointer text-text font-semibold hover:border-b-0 sm:hidden md:hidden">
+              Login
+            </p>
+          ) : (
+            <span className="w-12"></span>
+          )}
+
           {/* <button className="rounded-3xl btn px-3 ms-3 py-1 uppercase font-semibold"></button> */}
 
           <button

@@ -4,8 +4,6 @@ import Register from "../components/Register";
 const LoginPage = () => {
   const [Showlogin, setShowlogin] = useState(true);
 
-  //   useEffect(() => {}, [third]);
-
   return (
     <>
       <div className="flex flex-col justify-center items-center">
