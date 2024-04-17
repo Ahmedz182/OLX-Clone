@@ -148,7 +148,7 @@ const NavBar = ({ checkLogin }) => {
               type="text"
               value="Pakistan"
               placeholder="Location or Compound"
-              className="location w-48 px-2  sm:w-[85dvw] md:sm:w-[85dvw] md:w-[66dvw]"
+              className="location w-48 px-2  sm:w-[70dvw] md:sm:w-[70dvw] md:w-[66dvw]"
               id="location"
             />
             <i class="ri-arrow-down-s-line py-2 text-2xl"></i>
@@ -157,7 +157,7 @@ const NavBar = ({ checkLogin }) => {
             <input
               type="search"
               placeholder="Find Cars,Mobile Phones and more..."
-              className="w-[48dvw] search px-2 py-1 sm:w-[80dvw] md:w-[73dvw]"
+              className="w-[48dvw] search px-2 py-1 sm:w-[78dvw] md:w-[75dvw]"
               id="search"
             />
             <span className="bg-primary h-full w-12 py-2 flex items-center justify-center cursor-pointer">
