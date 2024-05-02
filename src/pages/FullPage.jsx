@@ -65,7 +65,17 @@ const FullPage = () => {
     itemsToRender = <div>No items found for this path.</div>;
   }
 
-  return <div className="flex gap-5 flex-wrap ps-5">{itemsToRender}</div>;
+  return (
+    <>
+      <div className=" px-8 py-5  flex items-center justify-between sm:mt-10 md:mt-10">
+        <span className="text-2xl font-bold text-text">{currentPath}s</span>
+      </div>
+      <div className="flex gap-5  flex-wrap  ps-5">
+        {/* <Title title={currentPath} /> */}
+        {itemsToRender}
+      </div>
+    </>
+  );
 };
 
 export default FullPage;

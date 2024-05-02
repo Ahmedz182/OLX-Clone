@@ -147,8 +147,8 @@ const NavBar = ({ checkLogin }) => {
             </span>
           </div>
         </div>
-        <div className="flex px-10 py-2 gap-3 items-center flex-wrap sm:px-5 sm:justify-end">
-          <span className=" map    px-3 rounded cursor-pointer ">
+        <div className="flex px-10 py-2 gap-3 items-center flex-wrap sm:px-5 sm:justify-end sm:w-screen md:w-screen">
+          <span className=" map    px-3 rounded cursor-pointer sm:hidden md:hidden">
             <input
               type="text"
               defaultValue="Pakistan"
@@ -158,7 +158,7 @@ const NavBar = ({ checkLogin }) => {
             />
             <i className="ri-arrow-down-s-line py-2 text-2xl"></i>
           </span>
-          <span className=" searchContainer   rounded">
+          <span className=" searchContainer sm:hidden md:hidden  rounded">
             <input
               type="search"
               placeholder="Find Cars,Mobile Phones and more..."
