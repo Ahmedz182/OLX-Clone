@@ -72,7 +72,7 @@ const Mobile = [
         time: "3 Week",
         categories: "Mobile",
         user: "Mobile HUb",
-        img: "https://images.olx.com.pk/thumbnails/447336924-800x600.webp",
+        img: "https://images.samsung.com/is/image/samsung/p6pim/pk/2202/gallery/pk-galaxy-s22-ultra-s908-413093-413093-sm-s908ezggpkd-531032888?$650_519_PNG$",
         location: "Maskan Chowrangi, Karachi",
         Description: "no shade, no dot, no line PTA Approved"
     },
@@ -83,7 +83,7 @@ const Mobile = [
         time: "3 days",
         user: "Iqbal",
         categories: "Mobile",
-        img: "https://images.olx.com.pk/thumbnails/447400672-800x600.webp",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfVVF2kaVyc7A2xtMZAYHZrnW7iBkkFTkk6iaUY-14Q&s",
         location: "Khalid Bin Walid Road, Karachi",
         Description: "iphone 15 plus like brand new condition 10/10 battery health 100% face id true tune active water sealed pack 100%  urgent sell  exchng with iphone 14 pro 13 pro max"
     },
@@ -94,7 +94,7 @@ const Mobile = [
         categories: "Mobile",
         user: "Smart Phone",
         time: "5 days",
-        img: "https://images.olx.com.pk/thumbnails/447401508-800x600.webp",
+        img: "https://media.wisemarket.com.pk/variant/inventory_8356.webp",
         location: "Ameer Colony, Okara",
         Description: "Pixel 6 pro 128GB\nNon Active\nNon PTA\nwith Box "
     },
