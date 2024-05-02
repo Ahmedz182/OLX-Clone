@@ -54,6 +54,7 @@ function App() {
           <i className="ri-arrow-right-s-line text-xl"></i>
           <div className="flex flex-wrap gap-4 items-center ps-3 ">
             {CATEGORIES.map((cat, index) => (
+              //
               <Link to={cat}>
                 <p
                   key={index}

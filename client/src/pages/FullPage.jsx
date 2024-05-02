@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom"; // Import useLocation hook
 const FullPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    //
   }, []);
 
   const location = useLocation(); // Get the current location

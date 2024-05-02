@@ -87,6 +87,8 @@ const Mobile = [
         location: "Khalid Bin Walid Road, Karachi",
         Description: "iphone 15 plus like brand new condition 10/10 battery health 100% face id true tune active water sealed pack 100%  urgent sell  exchng with iphone 14 pro 13 pro max"
     },
+
+    //
     {
         id: "0o02os20sxoakxsxjikmx",
         title: "Google Pixel 6 Pro",

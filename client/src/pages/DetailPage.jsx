@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Mobile from "../utils/demo/Mobile";
-
+//
 const DetailPage = () => {
   const [localId, setLocalId] = useState(null);
   const [Like, setLike] = useState(false);

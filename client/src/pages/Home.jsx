@@ -12,7 +12,7 @@ const Home = () => {
       <div className=" flex flex-col ">
         <HeroBanner />
         <Categories />
-
+        //
         <Title title="Mobile Phones" product="Mobile" />
         <div className="flex flex-wrap  gap-x-3 gap-y-4  justify-center">
           {Mobile.slice(0, 4).map(

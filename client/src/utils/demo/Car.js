@@ -67,6 +67,6 @@ const car = [
         location: "Liaquat Town, Faisalabad",
         Description: "model 2021 \nRigisteration  punjab \nFull Option , Own Name"
     },
-
+    //
 ];
 export default car;

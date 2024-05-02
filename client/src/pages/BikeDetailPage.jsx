@@ -29,6 +29,7 @@ const BikeDetailPage = () => {
     <>
       <div className="flex  sm:flex-col md:flex-col overflow-hidden">
         <div>
+          <span></span>
           {detail && (
             <>
               <div className="m-8 flex flex-col gap-y-7 sm:w-[95dvw] md:w-[95dvw]">

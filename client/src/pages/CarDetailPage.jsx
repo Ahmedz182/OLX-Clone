@@ -4,7 +4,7 @@ import car from "../utils/demo/Car";
 const CarDetailPage = () => {
   const [localId, setLocalId] = useState(null);
   const [Like, setLike] = useState(false);
-
+  //
   const detail = car.find((car) => car.id === localId);
 
   const share = () => {
